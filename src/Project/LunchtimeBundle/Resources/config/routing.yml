@@ -9,3 +9,16 @@ ProjectLunchtimeBundle_about:
     defaults: { _controller: ProjectLunchtimeBundle:Page:about }
     requirements:
         _method:  GET
+
+ProjectLunchtimeBundle_contact:
+    pattern:  /contact
+    defaults: { _controller: ProjectLunchtimeBundle:Page:contact }
+    requirements:
+        _method:  GET
+        
+ProjectLunchtimeBundle_event_show:
+    pattern:  /{id}
+    defaults: { _controller: ProjectLunchtimeBundle:Event:show }
+    requirements:
+        _method:  GET
+        id: \d+

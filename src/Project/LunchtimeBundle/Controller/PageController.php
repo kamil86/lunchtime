@@ -15,4 +15,8 @@ class PageController extends Controller
     {
         return $this->render('ProjectLunchtimeBundle:Page:about.html.twig');
     }
+	public function contactAction()
+{
+    return $this->render('ProjectLunchtimeBundle:Page:contact.html.twig');
+}
 }
