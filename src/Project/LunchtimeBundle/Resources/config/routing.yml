@@ -1,0 +1,11 @@
+ProjectLunchtimeBundle_homepage:
+    pattern:  /
+    defaults: { _controller: ProjectLunchtimeBundle:Page:index }
+    requirements:
+        _method:  GET
+
+ProjectLunchtimeBundle_about:
+    pattern:  /about
+    defaults: { _controller: ProjectLunchtimeBundle:Page:about }
+    requirements:
+        _method:  GET
