@@ -1,0 +1,16 @@
+{% extends 'ProjectLunchtimeBundle::layout.html.twig' %}
+
+{% block title %}{{ event.title }}{% endblock %}
+
+{% block body %}
+    <article class="blog">
+        <header>
+            <div class="date"><time datetime="{{ event.created|date('c') }}">{{ event.created|date('l, F j, Y') }}</time></div>
+            <h2>{{ event.title }}</h2>
+        </header>
+        <img src="{{ asset(['images/', event.image]|join) }}" alt="{{ event.title }} image not found" class="large" />
+        <div>
+            <p>{{ event.event }}</p>
+        </div>
+    </article>
+{% endblock %}
